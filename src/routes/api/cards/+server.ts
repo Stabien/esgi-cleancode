@@ -26,6 +26,6 @@ export const POST: RequestHandler = async ({ request }) => {
   }
 
   const response = { ...body, id: crypto.randomUUID(), category: "FIRST" }
+  
   return json(response)
-
 }
