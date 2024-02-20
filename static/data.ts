@@ -35,10 +35,12 @@ export const cards = [
 		tag: 'tag 5'
 	},
 	{
-		id: '426a23b4-7d7e-4e34-b78a-a783574974bb',
+		id: '4d3ddbaa-2d42-43a9-9ece-618f070da8af',
 		question: 'question 5',
 		answer: 'answer 5',
 		category: '5',
 		tag: 'tag 5'
 	}
 ];
+
+export const launchedQuizzDate = new Date("2024-10-01")
