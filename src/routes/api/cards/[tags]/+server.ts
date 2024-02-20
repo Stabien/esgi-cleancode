@@ -1,7 +1,7 @@
 import { type RequestHandler, json } from '@sveltejs/kit';
 import { cards } from '../../../../../static/data';
 
-export const getCardsWithTag = (tags: string) => {
+const getCardsWithTag = (tags: string) => {
 	return cards.filter((card) => tags.includes(card.tag));
 };
 

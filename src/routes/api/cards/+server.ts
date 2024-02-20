@@ -2,7 +2,7 @@ import { type RequestHandler, json, error } from "@sveltejs/kit";
 import { cards } from "../../../../static/data"
 import type { Card } from "../../../domains/card/models";
 
-export const isProcessableCard = (card: Card) => {
+const isProcessableCard = (card: Card) => {
   if (!card.hasOwnProperty("question") || card.question.length === 0) {
     return false
   }
